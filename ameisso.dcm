@@ -1,0 +1,96 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2N7000
+D N-Channel MOSFET Transistor
+F Datasheets/2N7000.pdf
+$ENDCMP
+#
+$CMP 7805
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP 78L05
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78lxx.pdf
+$ENDCMP
+#
+$CMP AP2112K-3V3
+D 600mA CMOS LDO REGULATOR WITH ENABLE
+F Datasheets/AP2112.pdf
+$ENDCMP
+#
+$CMP CHERRY_MX
+D Single Keyboard Key
+$ENDCMP
+#
+$CMP DIL_2
+D DUAL DIL INTER
+K DIL DUAL SWITCH
+$ENDCMP
+#
+$CMP DIP_SWITCH
+D Interrupteur double
+$ENDCMP
+#
+$CMP IRF520N
+D 100V Vds, POWER MOSFET N-Channel, TO-220
+K MOSFET N-Channel
+F http://www.vishay.com/docs/91017/91017.pdf
+$ENDCMP
+#
+$CMP IRFP260N
+D 200V Vds 50A Id, N-Channel MOSFET
+K N-Channel MOSFET
+F Datasheets/IRFP260NPBF.pdf
+$ENDCMP
+#
+$CMP LM7805
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP LM7812
+D Linear Regulator +12V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP MCP1701A
+D 3V3 regulator 250mA
+F /Users/antoine/Dropbox/Antoine/KicadLibs/Datasheets/MCP1701A.pdf
+$ENDCMP
+#
+$CMP MCP73831
+D LIPO charge Manager
+F Datasheets/MCP73831T.pdf
+$ENDCMP
+#
+$CMP MIC4421/22
+D MIC4421/22
+F Datasheets/mic4421-22.pdf
+$ENDCMP
+#
+$CMP NCP5051
+D 3V3 150mA Regulator
+$ENDCMP
+#
+$CMP SPST
+D Interrupteur simple
+K switch
+$ENDCMP
+#
+$CMP Si2307BDS
+D P-Channel 30-V (D-S) MOSFET
+F Datasheets/Si2307BDS.pdf
+$ENDCMP
+#
+$CMP TLE5205
+D TLE5205 MOTOR Driver
+F Datasheets/TLE5205.pdf
+$ENDCMP
+#
+#End Doc Library
