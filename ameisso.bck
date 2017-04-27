@@ -83,6 +83,11 @@ D Interrupteur simple
 K switch
 $ENDCMP
 #
+$CMP Si2307BDS
+D P-Channel 30-V (D-S) MOSFET
+F Datasheets/Si2307BDS.pdf
+$ENDCMP
+#
 $CMP TLE5205
 D TLE5205 MOTOR Driver
 F Datasheets/TLE5205.pdf
