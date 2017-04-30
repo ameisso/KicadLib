@@ -35,6 +35,11 @@ $CMP DIP_SWITCH
 D Interrupteur double
 $ENDCMP
 #
+$CMP HX711
+D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
+F /Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/hx711.pdf
+$ENDCMP
+#
 $CMP IRF520N
 D 100V Vds, POWER MOSFET N-Channel, TO-220
 K MOSFET N-Channel

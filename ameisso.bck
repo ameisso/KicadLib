@@ -47,6 +47,12 @@ K N-Channel MOSFET
 F Datasheets/IRFP260NPBF.pdf
 $ENDCMP
 #
+$CMP LM1117
+D Linear Regulator +3V3
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
 $CMP LM7805
 D Linear Regulator +5V
 K POWER REGUL
@@ -81,11 +87,6 @@ $ENDCMP
 $CMP SPST
 D Interrupteur simple
 K switch
-$ENDCMP
-#
-$CMP Si2307BDS
-D P-Channel 30-V (D-S) MOSFET
-F Datasheets/Si2307BDS.pdf
 $ENDCMP
 #
 $CMP TLE5205
