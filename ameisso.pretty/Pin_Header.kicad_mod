@@ -1,4 +1,4 @@
-(module Pin_Header (layer F.Cu) (tedit 577FAB7E)
+(module Pin_Header (layer F.Cu) (tedit 59070897)
   (descr "Through hole pin header")
   (tags "pin header")
   (fp_text reference REF** (at 0 -5.1) (layer F.SilkS)
@@ -13,8 +13,7 @@
   (fp_line (start -1.75 -1.75) (end -1.75 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start 1.75 -1.75) (end 1.75 1.75) (layer F.CrtYd) (width 0.05))
   (fp_line (start -1.75 -1.75) (end 1.75 -1.75) (layer F.CrtYd) (width 0.05))
-  (pad 1 thru_hole rect (at 0 0) (size 2.2352 2.2352) (drill 1.016) (layers *.Cu *.Mask F.SilkS))
-  (pad ~ smd rect (at 0 1.75) (size 2.2352 1.5) (layers F.Cu F.Paste F.Mask))
+  (pad 1 thru_hole rect (at 0 0) (size 2.2352 3.3) (drill 1.016 (offset 0 0.53)) (layers *.Cu *.Mask F.SilkS))
   (model Pin_Headers.3dshapes/Pin_Header_Straight_1x01.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
