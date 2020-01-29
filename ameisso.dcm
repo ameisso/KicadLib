@@ -52,6 +52,11 @@ K N-Channel MOSFET
 F Datasheets/IRFP260NPBF.pdf
 $ENDCMP
 #
+$CMP LDD-500H
+D DC-DC Constant Current Step-Down LED driver
+F /Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/LDD-H-spec-766227.pdf
+$ENDCMP
+#
 $CMP LM1117
 D Linear Regulator +3V3
 K POWER REGUL
@@ -70,6 +75,11 @@ K POWER REGUL
 F regulator\lm78xx.pdf
 $ENDCMP
 #
+$CMP MC33HB2001
+D 10 A H-Bridge, SPI programmable brushed DC motor driver
+F /Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/MC33HB2001.pdf
+$ENDCMP
+#
 $CMP MCP1701A
 D 3V3 regulator 250mA
 F /Users/antoine/Dropbox/Antoine/KicadLibs/Datasheets/MCP1701A.pdf
@@ -80,13 +90,23 @@ D LIPO charge Manager
 F Datasheets/MCP73831T.pdf
 $ENDCMP
 #
-$CMP MIC4421/22
+$CMP MIC4421_22
 D MIC4421/22
 F Datasheets/mic4421-22.pdf
 $ENDCMP
 #
 $CMP NCP5051
 D 3V3 150mA Regulator
+$ENDCMP
+#
+$CMP PTR
+D Switched potentiometer
+F https://datasheet.octopart.com/PTR901-2015K-B503-Bourns-datasheet-11550089.pdf
+$ENDCMP
+#
+$CMP PTR90
+D Switched potentiometer
+F https://datasheet.octopart.com/PTR901-2015K-B503-Bourns-datasheet-11550089.pdf
 $ENDCMP
 #
 $CMP SPST
@@ -97,6 +117,12 @@ $ENDCMP
 $CMP TLE5205
 D TLE5205 MOTOR Driver
 F Datasheets/TLE5205.pdf
+$ENDCMP
+#
+$CMP ZXM61N03F
+D 30V N-CHANNEL ENHANCEMENT MODE MOSFET SOT-23
+K MOSFET N-Channel
+F http://datasheet.octopart.com/ZXM61N03FTA-Zetex-datasheet-8328987.pdf
 $ENDCMP
 #
 #End Doc Library

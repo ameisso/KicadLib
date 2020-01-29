@@ -1,7 +1,7 @@
-(module Pin_Header_Straight_1x02 (layer F.Cu) (tedit 5677045D)
+(module Pin_Header_Straight_1x02 (layer F.Cu) (tedit 5A63093D)
   (descr "Through hole pin header")
   (tags "pin header")
-  (fp_text reference PIEZO1 (at 0 -5.1) (layer F.SilkS)
+  (fp_text reference J? (at 0 -5.1) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value CONN_01X02 (at 0 -3.1) (layer F.Fab) hide
