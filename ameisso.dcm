@@ -125,4 +125,8 @@ K MOSFET N-Channel
 F http://datasheet.octopart.com/ZXM61N03FTA-Zetex-datasheet-8328987.pdf
 $ENDCMP
 #
+$CMP tatoo_Machine_Suspension
+D tatoo machine copper rod suspension 5 pin 1mm
+$ENDCMP
+#
 #End Doc Library
