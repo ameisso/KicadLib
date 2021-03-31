@@ -40,6 +40,10 @@ D 24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales
 F /Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/hx711.pdf
 $ENDCMP
 #
+$CMP HX711_MODULE
+F https://www.vs-elec.fr/fr/force/297-module-capteur-de-pression-pesage-hx711-pour-arduino-3665662005090.html
+$ENDCMP
+#
 $CMP IRF520N
 D 100V Vds, POWER MOSFET N-Channel, TO-220
 K MOSFET N-Channel

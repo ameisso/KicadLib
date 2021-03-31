@@ -1,0 +1,13 @@
+(module tatoo_machine_hole (layer F.Cu) (tedit 5E42A81F)
+  (fp_text reference REF** (at 0 5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value tatoo_machine_hole (at 0 -5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -3.8 -4.01) (end 3.8 -4.01) (layer F.SilkS) (width 0.12))
+  (fp_line (start 3.8 -4.01) (end 3.8 4.01) (layer F.SilkS) (width 0.12))
+  (fp_line (start 3.8 4.01) (end -3.8 4.01) (layer F.SilkS) (width 0.12))
+  (fp_line (start -3.8 4.01) (end -3.8 -4.01) (layer F.SilkS) (width 0.12))
+  (pad 1 thru_hole circle (at 0 0) (size 7.6 7.6) (drill 3.5) (layers *.Cu *.Mask))
+)
