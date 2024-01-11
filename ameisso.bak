@@ -1,570 +1,2547 @@
-EESchema-LIBRARY Version 2.3
-#encoding utf-8
-#
-# 1N4007
-#
-DEF 1N4007 D 0 40 Y Y 1 F N
-F0 "D" -50 150 60 H V C CNN
-F1 "1N4007" -50 -150 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 0 -100 0 -250 0 N
-P 2 0 1 0 0 0 150 0 N
-P 2 0 1 0 0 100 0 -100 N
-P 4 0 1 0 -100 100 -100 -100 0 0 -100 100 N
-X ~ 1 -350 0 100 R 50 50 1 1 P
-X ~ 2 250 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# 2N7000
-#
-DEF 2N7000 Q 0 40 Y Y 1 F N
-F0 "Q" 550 350 60 H V C CNN
-F1 "2N7000" 500 500 60 H V C CNN
-F2 "" 0 300 60 H V C CNN
-F3 "" 0 300 60 H V C CNN
-$FPLIST
- TO-92
- SOT-23
-$ENDFPLIST
-DRAW
-C 100 150 320 0 1 0 N
-P 2 0 1 0 -50 150 -50 300 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 0 0 100 0 N
-P 2 0 1 0 0 50 0 0 N
-P 2 0 1 0 0 100 0 200 N
-P 2 0 1 0 0 250 0 350 N
-P 2 0 1 0 0 300 100 300 N
-P 2 0 1 0 100 150 100 150 N
-P 2 0 1 0 100 300 100 500 N
-P 2 0 1 0 150 200 250 200 N
-P 3 0 1 0 -150 0 -50 0 -50 150 N
-P 3 0 1 0 0 150 100 150 100 -200 N
-P 3 0 1 0 200 200 200 350 100 350 N
-P 4 0 1 0 0 150 50 200 50 100 0 150 N
-P 7 0 1 0 100 -50 200 -50 200 150 150 150 200 200 250 150 200 150 N
-X G 1 -350 0 200 R 50 50 1 1 I
-X S 2 100 -400 200 U 50 50 1 1 I
-X D 3 100 700 200 D 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# 7805
-#
-DEF 7805 U 0 30 Y Y 1 F N
-F0 "U" 150 -196 50 H V C CNN
-F1 "7805" 0 200 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-ALIAS LM7805 LM7812 78L05
-DRAW
-S -200 -150 200 150 0 1 0 N
-X VI 1 -400 50 200 R 40 40 1 1 I
-X GND 2 0 -250 100 U 40 40 1 1 I
-X VO 3 400 50 200 L 40 40 1 1 w
-ENDDRAW
-ENDDEF
-#
-# AP2112K-3V3
-#
-DEF AP2112K-3V3 U 0 40 Y Y 1 F N
-F0 "U" 0 -200 60 H V C CNN
-F1 "AP2112K-3V3" 0 300 60 H V C CNN
-F2 "" 0 400 60 H V C CNN
-F3 "" 0 400 60 H V C CNN
-$FPLIST
- SOT-23-5
-$ENDFPLIST
-DRAW
-P 6 0 1 0 -250 200 -250 -250 250 -250 250 250 -250 250 -250 200 N
-X VIN 1 -450 150 200 R 50 50 1 1 I
-X GND 2 -450 0 200 R 50 50 1 1 I
-X EN 3 -450 -150 200 R 50 50 1 1 I
-X NC 4 450 -150 200 L 50 50 1 1 N
-X VOUT 5 450 150 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# CHERRY_MX
-#
-DEF CHERRY_MX U 0 40 Y N 1 F N
-F0 "U" 0 -300 60 H V C CNN
-F1 "CHERRY_MX" 0 150 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- CHERRY*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -150 -150 -50 -150 N
-P 2 0 1 0 -150 0 -100 0 N
-P 2 0 1 0 -100 0 50 50 N
-P 2 0 1 0 0 -150 100 -150 N
-P 2 0 1 0 0 -100 0 -200 N
-P 2 0 1 0 50 0 100 0 N
-P 4 0 1 0 -50 -100 -50 -200 0 -150 -50 -100 N
-P 5 0 1 0 -200 100 -200 -250 150 -250 150 100 -200 100 f
-X ~ 1 -350 0 200 R 50 50 1 1 I
-X ~ 2 300 0 200 L 50 50 1 1 I
-X ~ 3 -350 -150 200 R 50 50 1 1 I
-X ~ 4 300 -150 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# CONN_SERVO
-#
-DEF CONN_SERVO P 0 40 Y Y 1 F N
-F0 "P" 0 200 60 H V C CNN
-F1 "CONN_SERVO" 50 -200 60 H V C CNN
-F2 "" 0 -50 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 6 0 1 0 -50 -150 -50 150 0 150 50 100 50 -150 -50 -150 N
-X SIG 1 -200 100 200 R 50 50 1 1 I
-X V+ 2 -200 0 200 R 50 50 1 1 W
-X GND 3 -200 -100 200 R 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# DIL_2
-#
-DEF DIL_2 SW 0 0 N Y 1 F N
-F0 "SW" 0 100 50 H V C CNN
-F1 "DIL_2" 0 -450 50 H V C CNN
-F2 "" -350 50 50 H V C CNN
-F3 "" -350 50 50 H V C CNN
-DRAW
-C -150 -300 50 0 0 0 N
-C -150 0 50 0 0 0 N
-C -150 0 50 0 0 0 N
-C 150 -300 50 0 0 0 N
-C 150 0 50 0 0 0 N
-P 2 0 0 0 -100 -300 100 -200 N
-P 2 0 0 0 -100 -300 100 -200 N
-P 2 0 0 0 -100 0 100 100 N
-C 1450 0 0 0 1 0 N
-X 1 1 -500 0 300 R 50 50 1 1 I
-X 2 2 -500 -300 300 R 50 50 1 1 I
-X 3 3 500 0 300 L 50 50 1 1 I
-X 4 4 500 -300 300 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# DIP_SWITCH
-#
-DEF DIP_SWITCH U 0 40 Y N 1 F N
-F0 "U" 0 -150 60 H V C CNN
-F1 "DIP_SWITCH" 0 300 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 0 -100 100 -100 -100 N
-P 2 0 1 0 50 -100 150 -100 N
-P 2 0 1 0 50 100 150 100 N
-P 2 0 1 0 150 100 150 -100 N
-P 3 0 1 0 -150 -100 -100 -100 50 -50 N
-P 3 0 1 0 -150 100 -100 100 50 150 N
-X 1 1 -250 100 100 R 50 50 1 1 I
-X 2 2 -250 -100 100 R 50 50 1 1 I
-X 3 3 250 100 100 L 50 50 1 1 I
-X 4 4 250 -100 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# HX711
-#
-DEF HX711 U 0 40 Y Y 1 F N
-F0 "U" 0 -450 60 H V C CNN
-F1 "HX711" 0 450 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-$FPLIST
- SOP-16L
-$ENDFPLIST
-DRAW
-S -250 400 250 -400 0 1 0 N
-S 250 -400 250 -400 0 1 0 N
-X VSUP 1 -450 350 200 R 50 50 1 1 I
-X BASE 2 -450 250 200 R 50 50 1 1 I
-X AVDD 3 -450 150 200 R 50 50 1 1 I
-X VFB 4 -450 50 200 R 50 50 1 1 I
-X AGND 5 -450 -50 200 R 50 50 1 1 I
-X VBG 6 -450 -150 200 R 50 50 1 1 I
-X INNA 7 -450 -250 200 R 50 50 1 1 I
-X INPA 8 -450 -350 200 R 50 50 1 1 I
-X INNB 9 450 -350 200 L 50 50 1 1 I
-X INPB 10 450 -250 200 L 50 50 1 1 I
-X PDSCK 11 450 -150 200 L 50 50 1 1 I
-X DOUT 12 450 -50 200 L 50 50 1 1 I
-X XO 13 450 50 200 L 50 50 1 1 I
-X XI 14 450 150 200 L 50 50 1 1 I
-X RATE 15 450 250 200 L 50 50 1 1 I
-X DVDD 16 450 350 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# IRF520N
-#
-DEF IRF520N Q 0 0 Y Y 1 F N
-F0 "Q" 250 75 50 H V L CNN
-F1 "IRF520N" 250 0 50 H V L CNN
-F2 "TO-220" 250 -75 50 H V L CIN
-F3 "" 0 0 50 H V L CNN
-$FPLIST
- TO-220*
-$ENDFPLIST
-DRAW
-C 100 -50 5 0 1 0 N
-C 100 50 5 0 1 0 N
-P 2 0 1 20 25 -40 25 -65 N
-P 2 0 1 20 25 15 25 -15 N
-P 2 0 1 20 25 65 25 40 N
-P 2 0 1 0 120 15 140 15 N
-P 3 0 1 10 0 60 0 -60 0 -60 N
-P 4 0 1 0 30 -50 100 -50 100 -100 100 -100 N
-P 4 0 1 0 30 50 100 50 100 100 100 100 N
-P 4 0 1 0 100 50 130 50 130 -50 100 -50 N
-P 4 0 1 0 130 15 120 -10 140 -10 130 15 F
-P 5 0 1 0 30 0 50 0 100 0 100 -50 100 -50 N
-P 6 0 1 0 35 0 75 15 75 -15 35 0 40 0 40 0 F
-X G 1 -200 -50 200 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# IRFP260N
-#
-DEF IRFP260N Q 0 0 Y Y 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "IRFP260N" 200 0 50 H V L CNN
-F2 "TO-247AC" 200 -75 50 H V L CIN
-F3 "" 0 0 50 H V L CNN
-$FPLIST
- TO247
-$ENDFPLIST
-DRAW
-C 50 0 111 0 1 10 N
-C 100 -50 5 0 1 0 N
-C 100 50 5 0 1 0 N
-P 2 0 1 20 25 -40 25 -65 N
-P 2 0 1 20 25 15 25 -15 N
-P 2 0 1 20 25 65 25 40 N
-P 2 0 1 0 120 15 115 10 N
-P 2 0 1 0 120 15 140 15 N
-P 2 0 1 0 140 15 145 20 N
-P 3 0 1 10 0 60 0 -60 0 -60 N
-P 4 0 1 0 30 -50 100 -50 100 -100 100 -100 N
-P 4 0 1 0 30 50 100 50 100 100 100 100 N
-P 4 0 1 0 100 50 130 50 130 -50 100 -50 N
-P 4 0 1 0 130 15 120 -10 140 -10 130 15 F
-P 5 0 1 0 30 0 50 0 100 0 100 -50 100 -50 N
-P 6 0 1 0 35 0 75 15 75 -15 35 0 40 0 40 0 F
-X G 1 -200 -50 200 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# LDD-500H
-#
-DEF LDD-500H U 0 40 Y Y 1 F N
-F0 "U" 0 -500 60 H V C CNN
-F1 "LDD-500H" 0 450 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-$FPLIST
- LDD-H_300_1000
-$ENDFPLIST
-DRAW
-P 5 0 1 0 -350 400 -350 -400 300 -400 300 400 -350 400 N
-X GND_1 ~ -550 350 200 R 50 50 1 1 I
-X GND_2 ~ -550 250 200 R 50 50 1 1 I
-X LED+_1 ~ 500 -250 200 L 50 50 1 1 I
-X LED+_2 ~ 500 -350 200 L 50 50 1 1 I
-X LED-_1 ~ -550 -250 200 R 50 50 1 1 I
-X LED-_2 ~ -550 -350 200 R 50 50 1 1 I
-X PWM_DIM ~ 500 150 200 L 50 50 1 1 I
-X VCC_1 ~ 500 350 200 L 50 50 1 1 I
-X VCC_2 ~ 500 250 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# LM1117
-#
-DEF LM1117 U 0 30 Y Y 1 F N
-F0 "U" 150 -196 50 H V C CNN
-F1 "LM1117" 0 200 50 H V C CNN
-F2 "ameisso:TO220_HORYZ" 50 -296 50 H I C CNN
-F3 "" 150 -196 50 H V C CNN
-$FPLIST
- TO_220
-$ENDFPLIST
-DRAW
-S -200 -150 200 150 0 1 0 N
-X GND 1 0 -250 100 U 40 40 1 1 I
-X VO 2 400 50 200 L 40 40 1 1 w
-X VI 3 -400 50 200 R 40 40 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MAX485
-#
-DEF MAX485 U 0 40 Y Y 1 F N
-F0 "U" 0 550 60 H V C CNN
-F1 "MAX485" 0 400 60 H V C CNN
-F2 "" 0 400 60 H V C CNN
-F3 "" 0 400 60 H V C CNN
-DRAW
-S -400 500 400 -500 0 1 0 N
-X RO 1 -600 300 200 R 50 50 1 1 I
-X RE 2 -600 100 200 R 50 50 1 1 I I
-X DE 3 -600 -100 200 R 50 50 1 1 I
-X DI 4 -600 -300 200 R 50 50 1 1 I
-X GND 5 600 -300 200 L 50 50 1 1 I
-X A_(D+,XLR_3) 6 600 100 200 L 50 50 1 1 O
-X B_(D-,XLR_2) 7 600 -100 200 L 50 50 1 1 O
-X VCC 8 600 300 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MC33HB2001
-#
-DEF MC33HB2001 U 0 40 Y Y 1 F N
-F0 "U" 0 300 60 H V C CNN
-F1 "MC33HB2001" 0 450 60 H V C CNN
-F2 "" 0 -200 60 H I C CNN
-F3 "" 0 -200 60 H I C CNN
-DRAW
-S -750 1000 750 -1000 0 1 0 N
-X AGND 1 -950 750 200 R 50 50 1 1 I
-X ENBL 2 -950 650 200 R 50 50 1 1 I
-X DIS 3 -950 550 200 R 50 50 1 1 I
-X IN2 4 -950 450 200 R 50 50 1 1 I
-X IN1 5 -950 350 200 R 50 50 1 1 I
-X CFB 6 -950 250 200 R 50 50 1 1 I
-X FS_B 7 -950 150 200 R 50 50 1 1 I
-X VPWR 8 -950 50 200 R 50 50 1 1 I
-X VPWR 9 -950 -50 200 R 50 50 1 1 I
-X OUT_1 10 -950 -150 200 R 50 50 1 1 I
-X NC 20 950 -450 200 L 50 50 1 1 I
-X SCLK 30 950 550 200 L 50 50 1 1 I
-X OUT_1 11 -950 -250 200 R 50 50 1 1 I
-X NC 21 950 -350 200 L 50 50 1 1 I
-X MOSI 31 950 650 200 L 50 50 1 1 I
-X NC 12 -950 -350 200 R 50 50 1 1 I
-X OUT_2 22 950 -250 200 L 50 50 1 1 I
-X DGND 32 950 750 200 L 50 50 1 1 I
-X NC 13 -950 -450 200 R 50 50 1 1 I
-X OUT_2 23 950 -150 200 L 50 50 1 1 I
-X Exposed_PAD_GND 33 0 -1200 200 U 50 50 1 1 I
-X NC 14 -950 -550 200 R 50 50 1 1 I
-X VPWR 24 950 -50 200 L 50 50 1 1 I
-X PGND 15 -950 -650 200 R 50 50 1 1 I
-X VPWR 25 950 50 200 L 50 50 1 1 I
-X PGND 16 -950 -750 200 R 50 50 1 1 I
-X CCP 26 950 150 200 L 50 50 1 1 I
-X PGND 17 950 -750 200 L 50 50 1 1 I
-X CS_B 27 950 250 200 L 50 50 1 1 I
-X PGND 18 950 -650 200 L 50 50 1 1 I
-X VDQQ 28 950 350 200 L 50 50 1 1 I
-X AGND 19 950 -550 200 L 50 50 1 1 I
-X MISO 29 950 450 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MCP1701A
-#
-DEF MCP1701A U 0 40 Y Y 1 F N
-F0 "U" 200 -100 60 H V C CNN
-F1 "MCP1701A" 0 300 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- SOT_23
- SOT_89
- TO_92
-$ENDFPLIST
-DRAW
-P 5 0 1 0 -300 250 300 250 300 -150 -300 -150 -300 250 N
-X GND 1 0 -450 300 U 50 50 1 1 B
-X VIN 2 -600 150 300 R 50 50 1 1 W
-X VOUT 3 600 150 300 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# MCP73831
-#
-DEF MCP73831 U 0 40 Y Y 1 F N
-F0 "U" 0 0 60 H V C CNN
-F1 "MCP73831" 0 300 60 H V C CNN
-F2 "" -150 500 60 H V C CNN
-F3 "" -150 500 60 H V C CNN
-$FPLIST
- SOT-23-5
- DFN
-$ENDFPLIST
-DRAW
-P 5 0 1 0 -350 250 -350 -250 350 -250 350 250 -350 250 N
-X STAT 1 -550 -150 200 R 50 50 1 1 I
-X VSS 2 550 -150 200 L 50 50 1 1 I
-X VBAT 3 550 150 200 L 50 50 1 1 I
-X Vin 4 -550 150 200 R 50 50 1 1 I
-X PROG 5 550 0 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# MIC4421/22
-#
-DEF MIC4421/22 U 0 40 Y Y 1 F N
-F0 "U" 200 300 60 H V C CNN
-F1 "MIC4421/22" 400 -450 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- DIP
- SOIC
- TO-220
- TO220
-$ENDFPLIST
-DRAW
-S -250 250 250 -400 0 1 0 N
-S 250 -250 250 -250 0 1 0 N
-X VS 1 -100 450 200 D 50 50 1 1 W
-X IN 2 -450 50 200 R 50 50 1 1 I
-X NC 3 -450 -50 200 R 50 50 1 1 N
-X GND_1 4 -100 -600 200 U 50 50 1 1 O
-X GND_2 5 100 -600 200 U 50 50 1 1 O
-X OUT_2 6 450 -50 200 L 50 50 1 1 O
-X OUT_1 7 450 50 200 L 50 50 1 1 O
-X VS 8 50 450 200 D 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# NCP5051
-#
-DEF NCP5051 U 0 40 Y Y 1 F N
-F0 "U" 250 -150 60 H V C CNN
-F1 "NCP5051" 400 300 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-DRAW
-P 2 0 1 0 0 300 0 200 N
-P 5 0 1 0 -150 200 -150 -200 350 -200 350 200 -150 200 N
-X VIN 1 -450 100 300 R 50 50 1 1 W
-X GND 2 100 -500 300 U 50 50 1 1 B
-X EN 3 -300 300 300 R 50 50 1 1 I
-X VOUT 5 650 100 300 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# SPST
-#
-DEF SPST SW 0 0 N Y 1 F N
-F0 "SW" -100 -250 50 H V C CNN
-F1 "SPST" -100 -450 50 H V C CNN
-F2 "" -100 -350 50 H V C CNN
-F3 "" -100 -350 50 H V C CNN
-DRAW
-C -250 -350 50 0 0 0 N
-C -250 -350 50 0 0 0 N
-C 50 -350 50 0 0 0 N
-C 50 -350 50 0 0 0 N
-P 2 0 0 0 -200 -350 0 -250 N
-P 2 0 0 0 -200 -350 0 -250 N
-X 1 1 -600 -350 300 R 50 50 1 1 I
-X 1 1 -600 -350 300 R 50 50 1 1 I
-X 2 2 400 -350 300 L 50 50 1 1 I
-X 2 2 400 -350 300 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# Si2307BDS
-#
-DEF Si2307BDS Q 0 0 Y Y 1 F N
-F0 "Q" 250 75 50 H V L CNN
-F1 "Si2307BDS" 250 0 50 H V L CNN
-F2 "SOT-23-3" 250 -75 50 H V L CIN
-F3 "" 0 0 50 H V L CNN
-$FPLIST
- SOT-23*
-$ENDFPLIST
-DRAW
-C 50 0 125 0 1 0 N
-C 100 -50 5 0 1 0 N
-C 100 50 5 0 1 0 N
-P 2 0 1 20 25 -40 25 -65 N
-P 2 0 1 20 25 15 25 -15 N
-P 2 0 1 20 25 65 25 40 N
-P 2 0 1 0 120 -10 115 -15 N
-P 2 0 1 0 140 -10 120 -10 N
-P 2 0 1 0 140 -10 145 -5 N
-P 3 0 1 10 0 60 0 -60 0 -60 N
-P 4 0 1 0 30 -50 100 -50 100 -100 100 -100 N
-P 4 0 1 0 30 0 100 0 100 -50 100 -50 N
-P 4 0 1 0 30 50 100 50 100 100 100 100 N
-P 4 0 1 0 55 15 55 -15 95 0 55 15 F
-P 4 0 1 0 100 50 130 50 130 -50 100 -50 N
-P 4 0 1 0 130 -10 140 15 120 15 130 -10 F
-X G 1 -200 -50 200 R 50 50 1 1 I
-X S 2 100 -200 100 U 50 50 1 1 P
-X D 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# TLE5205
-#
-DEF TLE5205 U 0 40 Y Y 1 F N
-F0 "U" 350 600 60 H V C CNN
-F1 "TLE5205" 200 500 60 H V C CNN
-F2 "" 0 0 60 H V C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- TO220
-$ENDFPLIST
-DRAW
-S -350 450 350 -350 0 1 0 N
-X OUT1 1 550 300 200 L 50 50 1 1 I
-X EF 2 -550 350 200 R 50 50 1 1 I
-X IN1 3 -550 -150 200 R 50 50 1 1 I
-X GND 4 0 -550 200 U 50 50 1 1 I
-X IN2 5 -550 -250 200 R 50 50 1 1 I
-X VS 6 0 650 200 D 50 50 1 1 I
-X OUT2 7 550 200 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# ZXM61N03F
-#
-DEF ZXM61N03F Q 0 0 Y Y 1 F N
-F0 "Q" 250 75 50 H V L CNN
-F1 "ZXM61N03F" 250 0 50 H V L CNN
-F2 "SOT-23" 250 -75 50 H V L CIN
-F3 "" 0 0 50 H V L CNN
-$FPLIST
- SOT-23
-$ENDFPLIST
-DRAW
-C 100 -50 5 0 1 0 N
-C 100 50 5 0 1 0 N
-P 2 0 1 20 25 -40 25 -65 N
-P 2 0 1 20 25 15 25 -15 N
-P 2 0 1 20 25 65 25 40 N
-P 2 0 1 0 120 15 140 15 N
-P 3 0 1 10 0 60 0 -60 0 -60 N
-P 4 0 1 0 30 -50 100 -50 100 -100 100 -100 N
-P 4 0 1 0 30 50 100 50 100 100 100 100 N
-P 4 0 1 0 100 50 130 50 130 -50 100 -50 N
-P 4 0 1 0 130 15 120 -10 140 -10 130 15 F
-P 5 0 1 0 30 0 50 0 100 0 100 -50 100 -50 N
-P 6 0 1 0 35 0 75 15 75 -15 35 0 40 0 40 0 F
-X G 1 -200 -50 200 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-#End Library
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "1N4007" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (id 0) (at -1.27 3.81 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "1N4007" (id 1) (at -1.27 -3.81 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (symbol "1N4007_0_1"
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy -6.35 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 3.81 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 2.54)
+          (xy 0 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 2.54)
+          (xy -2.54 -2.54)
+          (xy 0 0)
+          (xy -2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "1N4007_1_1"
+      (pin passive line (at -8.89 0 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 6.35 0 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "2N7000" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 13.97 8.89 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "2N7000" (id 1) (at 12.7 12.7 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "Datasheets/2N7000.pdf" (id 3) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "N-Channel MOSFET Transistor" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "TO-92 SOT-23" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "2N7000_0_1"
+      (polyline
+        (pts
+          (xy -1.27 3.81)
+          (xy -1.27 7.62)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -1.27)
+          (xy 0 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.27)
+          (xy 0 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 2.54)
+          (xy 0 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 6.35)
+          (xy 0 8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 7.62)
+          (xy 2.54 7.62)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 3.81)
+          (xy 2.54 3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 7.62)
+          (xy 2.54 12.7)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 5.08)
+          (xy 6.35 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 0)
+          (xy -1.27 0)
+          (xy -1.27 3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 3.81)
+          (xy 2.54 3.81)
+          (xy 2.54 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.08 5.08)
+          (xy 5.08 8.89)
+          (xy 2.54 8.89)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 3.81)
+          (xy 1.27 5.08)
+          (xy 1.27 2.54)
+          (xy 0 3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 -1.27)
+          (xy 5.08 -1.27)
+          (xy 5.08 3.81)
+          (xy 3.81 3.81)
+          (xy 5.08 5.08)
+          (xy 6.35 3.81)
+          (xy 5.08 3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 3.81) (radius 8.128)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "2N7000_1_1"
+      (pin input line (at -8.89 0 0) (length 5.08)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 2.54 -10.16 90) (length 5.08)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 2.54 17.78 270) (length 5.08)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "7805" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "7805" (id 1) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "regulator\\lm78xx.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "POWER REGUL" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Linear Regulator +5V" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "7805_0_1"
+      (rectangle (start -5.08 -3.81) (end 5.08 3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "7805_1_1"
+      (pin input line (at -10.16 1.27 0) (length 5.08)
+        (name "VI" (effects (font (size 1.016 1.016))))
+        (number "1" (effects (font (size 1.016 1.016))))
+      )
+      (pin input line (at 0 -6.35 90) (length 2.54)
+        (name "GND" (effects (font (size 1.016 1.016))))
+        (number "2" (effects (font (size 1.016 1.016))))
+      )
+      (pin power_out line (at 10.16 1.27 180) (length 5.08)
+        (name "VO" (effects (font (size 1.016 1.016))))
+        (number "3" (effects (font (size 1.016 1.016))))
+      )
+    )
+  )
+  (symbol "78L05" (extends "7805")
+    (property "Reference" "U" (id 0) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "78L05" (id 1) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "regulator\\lm78lxx.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "POWER REGUL" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Linear Regulator +5V" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+  (symbol "LM7805" (extends "7805")
+    (property "Reference" "U" (id 0) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "LM7805" (id 1) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "regulator\\lm78xx.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "POWER REGUL" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Linear Regulator +5V" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+  (symbol "LM7812" (extends "7805")
+    (property "Reference" "U" (id 0) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "LM7812" (id 1) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "regulator\\lm78xx.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "POWER REGUL" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Linear Regulator +12V" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+  (symbol "9VBatHolder" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 3.81 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "9VBatHolder" (id 1) (at 3.81 -5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "9VBatHolder_0_1"
+      (arc (start -7.62 -6.35) (mid -5.08 -8.89) (end -2.54 -6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start -7.62 3.81) (end -7.62 -6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center -5.08 -5.08) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center -5.08 2.54) (radius 1.8034)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start -2.54 -2.54) (end -2.54 -6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start -2.54 0) (end -2.54 3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc (start -2.54 3.81) (mid -5.08 6.35) (end -7.62 3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "9VBatHolder_1_1"
+      (pin input line (at 0 0 180) (length 2.54)
+        (name "+" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 0 -2.54 180) (length 2.54)
+        (name "-" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "AP2112K-3V3" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -5.08 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "AP2112K-3V3" (id 1) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 10.16 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "Datasheets/AP2112.pdf" (id 3) (at 0 10.16 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "600mA CMOS LDO REGULATOR WITH ENABLE" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOT-23-5" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "AP2112K-3V3_0_1"
+      (polyline
+        (pts
+          (xy -6.35 5.08)
+          (xy -6.35 -6.35)
+          (xy 6.35 -6.35)
+          (xy 6.35 6.35)
+          (xy -6.35 6.35)
+          (xy -6.35 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "AP2112K-3V3_1_1"
+      (pin input line (at -11.43 3.81 0) (length 5.08)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 0 0) (length 5.08)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 -3.81 0) (length 5.08)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at 11.43 -3.81 180) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 3.81 180) (length 5.08)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "CHERRY_MX" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "CHERRY_MX" (id 1) (at 0 3.81 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "Single Keyboard Key" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "CHERRY*" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "CHERRY_MX_0_1"
+      (polyline
+        (pts
+          (xy -3.81 -3.81)
+          (xy -1.27 -3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 0)
+          (xy -2.54 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy 1.27 1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -3.81)
+          (xy 2.54 -3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 -2.54)
+          (xy 0 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 0)
+          (xy 2.54 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -1.27 -2.54)
+          (xy -1.27 -5.08)
+          (xy 0 -3.81)
+          (xy -1.27 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -5.08 2.54)
+          (xy -5.08 -6.35)
+          (xy 3.81 -6.35)
+          (xy 3.81 2.54)
+          (xy -5.08 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+    )
+    (symbol "CHERRY_MX_1_1"
+      (pin input line (at -8.89 0 0) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 0 180) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -8.89 -3.81 0) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 -3.81 180) (length 5.08)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "CONN_SERVO" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "P" (id 0) (at 0 5.08 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "CONN_SERVO" (id 1) (at 1.27 -5.08 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 -1.27 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (symbol "CONN_SERVO_0_1"
+      (polyline
+        (pts
+          (xy -1.27 -3.81)
+          (xy -1.27 3.81)
+          (xy 0 3.81)
+          (xy 1.27 2.54)
+          (xy 1.27 -3.81)
+          (xy -1.27 -3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "CONN_SERVO_1_1"
+      (pin input line (at -5.08 2.54 0) (length 5.08)
+        (name "SIG" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -5.08 0 0) (length 5.08)
+        (name "V+" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at -5.08 -2.54 0) (length 5.08)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "DIL_2" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "SW" (id 0) (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "DIL_2" (id 1) (at 0 -11.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at -8.89 1.27 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "" (id 3) (at -8.89 1.27 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "DIL DUAL SWITCH" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "DUAL DIL INTER" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "DIL_2_0_0"
+      (circle (center -3.81 -7.62) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center -3.81 0) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center -3.81 0) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -7.62)
+          (xy 2.54 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 -7.62)
+          (xy 2.54 -5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -2.54 0)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 3.81 -7.62) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 3.81 0) (radius 1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "DIL_2_0_1"
+      (circle (center 36.83 0) (radius 0.0001)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "DIL_2_1_1"
+      (pin input line (at -12.7 0 0) (length 7.62)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -12.7 -7.62 0) (length 7.62)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 0 180) (length 7.62)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 -7.62 180) (length 7.62)
+        (name "4" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "DIP_SWITCH" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -3.81 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "DIP_SWITCH" (id 1) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "Interrupteur double" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "DIP_SWITCH_0_1"
+      (polyline
+        (pts
+          (xy -2.54 2.54)
+          (xy -2.54 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 -2.54)
+          (xy 3.81 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.27 2.54)
+          (xy 3.81 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.81 2.54)
+          (xy 3.81 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 -2.54)
+          (xy -2.54 -2.54)
+          (xy 1.27 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 2.54)
+          (xy -2.54 2.54)
+          (xy 1.27 3.81)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "DIP_SWITCH_1_1"
+      (pin input line (at -6.35 2.54 0) (length 2.54)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -6.35 -2.54 0) (length 2.54)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 6.35 2.54 180) (length 2.54)
+        (name "3" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 6.35 -2.54 180) (length 2.54)
+        (name "4" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "HX711" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -11.43 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "HX711" (id 1) (at 0 11.43 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "/Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/hx711.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "ki_description" "24-Bit Analog-to-Digital Converter (ADC) for Weigh Scales" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOP-16L" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "HX711_0_1"
+      (rectangle (start -6.35 10.16) (end 6.35 -10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start 6.35 -10.16) (end 6.35 -10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "HX711_1_1"
+      (pin input line (at -11.43 8.89 0) (length 5.08)
+        (name "VSUP" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 -6.35 180) (length 5.08)
+        (name "INPB" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 -3.81 180) (length 5.08)
+        (name "PDSCK" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 -1.27 180) (length 5.08)
+        (name "DOUT" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 1.27 180) (length 5.08)
+        (name "XO" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 3.81 180) (length 5.08)
+        (name "XI" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 6.35 180) (length 5.08)
+        (name "RATE" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 8.89 180) (length 5.08)
+        (name "DVDD" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 6.35 0) (length 5.08)
+        (name "BASE" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 3.81 0) (length 5.08)
+        (name "AVDD" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 1.27 0) (length 5.08)
+        (name "VFB" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 -1.27 0) (length 5.08)
+        (name "AGND" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 -3.81 0) (length 5.08)
+        (name "VBG" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 -6.35 0) (length 5.08)
+        (name "INNA" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 -8.89 0) (length 5.08)
+        (name "INPA" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 11.43 -8.89 180) (length 5.08)
+        (name "INNB" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "HX711_MODULE" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "HX711_MODULE" (id 1) (at 0 2.54 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://www.vs-elec.fr/fr/force/297-module-capteur-de-pression-pesage-hx711-pour-arduino-3665662005090.html" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "HX711_MODULE_0_1"
+      (rectangle (start -16.51 -10.16) (end 16.51 10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+    )
+    (symbol "HX711_MODULE_1_1"
+      (pin input line (at -19.05 3.81 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 -6.35 180) (length 2.54)
+        (name "B+" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -19.05 1.27 0) (length 2.54)
+        (name "DT" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -19.05 -1.27 0) (length 2.54)
+        (name "SCK" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -19.05 -3.81 0) (length 2.54)
+        (name "VCC" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 6.35 180) (length 2.54)
+        (name "E+" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 3.81 180) (length 2.54)
+        (name "E-" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 1.27 180) (length 2.54)
+        (name "A-" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 -1.27 180) (length 2.54)
+        (name "A+" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 19.05 -3.81 180) (length 2.54)
+        (name "B-" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "IRF520N" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 6.35 1.905 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "IRF520N" (id 1) (at 6.35 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TO-220" (id 2) (at 6.35 -1.905 0)
+      (effects (font (size 1.27 1.27) italic) (justify left))
+    )
+    (property "Datasheet" "http://www.vishay.com/docs/91017/91017.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "ki_keywords" "MOSFET N-Channel" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "100V Vds, POWER MOSFET N-Channel, TO-220" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "TO-220*" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "IRF520N_0_1"
+      (polyline
+        (pts
+          (xy 0.635 -1.016)
+          (xy 0.635 -1.651)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 0.381)
+          (xy 0.635 -0.381)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 1.651)
+          (xy 0.635 1.016)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.048 0.381)
+          (xy 3.556 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.524)
+          (xy 0 -1.524)
+          (xy 0 -1.524)
+        )
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.27)
+          (xy 2.54 -1.27)
+          (xy 2.54 -2.54)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 1.27)
+          (xy 2.54 1.27)
+          (xy 2.54 2.54)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 1.27)
+          (xy 3.302 1.27)
+          (xy 3.302 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.302 0.381)
+          (xy 3.048 -0.254)
+          (xy 3.556 -0.254)
+          (xy 3.302 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 1.27 0)
+          (xy 2.54 0)
+          (xy 2.54 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.889 0)
+          (xy 1.905 0.381)
+          (xy 1.905 -0.381)
+          (xy 0.889 0)
+          (xy 1.016 0)
+          (xy 1.016 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center 2.54 -1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "IRF520N_1_1"
+      (pin input line (at -5.08 -1.27 0) (length 5.08)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 5.08 270) (length 2.54)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -5.08 90) (length 2.54)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "IRFP260N" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 5.08 1.905 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "IRFP260N" (id 1) (at 5.08 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TO-247AC" (id 2) (at 5.08 -1.905 0)
+      (effects (font (size 1.27 1.27) italic) (justify left))
+    )
+    (property "Datasheet" "Datasheets/IRFP260NPBF.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "ki_keywords" "N-Channel MOSFET" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "200V Vds 50A Id, N-Channel MOSFET" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "TO247" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "IRFP260N_0_1"
+      (polyline
+        (pts
+          (xy 0.635 -1.016)
+          (xy 0.635 -1.651)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 0.381)
+          (xy 0.635 -0.381)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 1.651)
+          (xy 0.635 1.016)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.048 0.381)
+          (xy 2.921 0.254)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.048 0.381)
+          (xy 3.556 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.556 0.381)
+          (xy 3.683 0.508)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.524)
+          (xy 0 -1.524)
+          (xy 0 -1.524)
+        )
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.27)
+          (xy 2.54 -1.27)
+          (xy 2.54 -2.54)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 1.27)
+          (xy 2.54 1.27)
+          (xy 2.54 2.54)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 1.27)
+          (xy 3.302 1.27)
+          (xy 3.302 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.302 0.381)
+          (xy 3.048 -0.254)
+          (xy 3.556 -0.254)
+          (xy 3.302 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 1.27 0)
+          (xy 2.54 0)
+          (xy 2.54 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.889 0)
+          (xy 1.905 0.381)
+          (xy 1.905 -0.381)
+          (xy 0.889 0)
+          (xy 1.016 0)
+          (xy 1.016 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center 1.27 0) (radius 2.8194)
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 -1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "IRFP260N_1_1"
+      (pin input line (at -5.08 -1.27 0) (length 5.08)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 5.08 270) (length 2.54)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -5.08 90) (length 2.54)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "LDD-500H" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 -12.7 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "LDD-500H" (id 1) (at 0 11.43 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "/Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/LDD-H-spec-766227.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "ki_description" "DC-DC Constant Current Step-Down LED driver" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "LDD-H_300_1000" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "LDD-500H_0_1"
+      (polyline
+        (pts
+          (xy -8.89 10.16)
+          (xy -8.89 -10.16)
+          (xy 7.62 -10.16)
+          (xy 7.62 10.16)
+          (xy -8.89 10.16)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "LDD-500H_1_1"
+      (pin input line (at -13.97 8.89 0) (length 5.08)
+        (name "GND_1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 -6.35 0) (length 5.08)
+        (name "LED-_1" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 -8.89 0) (length 5.08)
+        (name "LED-_2" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 -8.89 180) (length 5.08)
+        (name "LED+_2" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 -6.35 180) (length 5.08)
+        (name "LED+_1" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 6.35 0) (length 5.08)
+        (name "GND_2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 3.81 180) (length 5.08)
+        (name "PWM_DIM" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 6.35 180) (length 5.08)
+        (name "VCC_2" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 12.7 8.89 180) (length 5.08)
+        (name "VCC_1" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "LM1117" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "LM1117" (id 1) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "ameisso:TO220_HORYZ" (id 2) (at 1.27 -7.5184 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "regulator\\lm78xx.pdf" (id 3) (at 3.81 -4.9784 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "POWER REGUL" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Linear Regulator +3V3" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "TO_220" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "LM1117_0_1"
+      (rectangle (start -5.08 -3.81) (end 5.08 3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "LM1117_1_1"
+      (pin input line (at 0 -6.35 90) (length 2.54)
+        (name "GND" (effects (font (size 1.016 1.016))))
+        (number "1" (effects (font (size 1.016 1.016))))
+      )
+      (pin power_out line (at 10.16 1.27 180) (length 5.08)
+        (name "VO" (effects (font (size 1.016 1.016))))
+        (number "2" (effects (font (size 1.016 1.016))))
+      )
+      (pin input line (at -10.16 1.27 0) (length 5.08)
+        (name "VI" (effects (font (size 1.016 1.016))))
+        (number "3" (effects (font (size 1.016 1.016))))
+      )
+    )
+  )
+  (symbol "MAX485" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 13.97 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MAX485" (id 1) (at 0 10.16 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 10.16 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 10.16 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (symbol "MAX485_0_1"
+      (rectangle (start -10.16 12.7) (end 10.16 -12.7)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "MAX485_1_1"
+      (pin input line (at -15.24 7.62 0) (length 5.08)
+        (name "RO" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input inverted (at -15.24 2.54 0) (length 5.08)
+        (name "RE" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 -2.54 0) (length 5.08)
+        (name "DE" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 -7.62 0) (length 5.08)
+        (name "DI" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 15.24 -7.62 180) (length 5.08)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 2.54 180) (length 5.08)
+        (name "A_(D+,XLR_3)" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 15.24 -2.54 180) (length 5.08)
+        (name "B_(D-,XLR_2)" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 15.24 7.62 180) (length 5.08)
+        (name "VCC" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MC33HB2001" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MC33HB2001" (id 1) (at 0 11.43 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 -5.08 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "Datasheet" "/Users/antoine/Dropbox/Antoine/KicadLibs/ameisso/Datasheets/MC33HB2001.pdf" (id 3) (at 0 -5.08 0)
+      (effects (font (size 1.524 1.524)) hide)
+    )
+    (property "ki_description" "10 A H-Bridge, SPI programmable brushed DC motor driver" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "MC33HB2001_0_1"
+      (rectangle (start -19.05 25.4) (end 19.05 -25.4)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "MC33HB2001_1_1"
+      (pin input line (at -24.13 19.05 0) (length 5.08)
+        (name "AGND" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -3.81 0) (length 5.08)
+        (name "OUT_1" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -6.35 0) (length 5.08)
+        (name "OUT_1" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -8.89 0) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -11.43 0) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -13.97 0) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -16.51 0) (length 5.08)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -19.05 0) (length 5.08)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -19.05 180) (length 5.08)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -16.51 180) (length 5.08)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -13.97 180) (length 5.08)
+        (name "AGND" (effects (font (size 1.27 1.27))))
+        (number "19" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 16.51 0) (length 5.08)
+        (name "ENBL" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -11.43 180) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "20" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -8.89 180) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "21" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -6.35 180) (length 5.08)
+        (name "OUT_2" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -3.81 180) (length 5.08)
+        (name "OUT_2" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 -1.27 180) (length 5.08)
+        (name "VPWR" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 1.27 180) (length 5.08)
+        (name "VPWR" (effects (font (size 1.27 1.27))))
+        (number "25" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 3.81 180) (length 5.08)
+        (name "CCP" (effects (font (size 1.27 1.27))))
+        (number "26" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 6.35 180) (length 5.08)
+        (name "CS_B" (effects (font (size 1.27 1.27))))
+        (number "27" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 8.89 180) (length 5.08)
+        (name "VDQQ" (effects (font (size 1.27 1.27))))
+        (number "28" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 11.43 180) (length 5.08)
+        (name "MISO" (effects (font (size 1.27 1.27))))
+        (number "29" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 13.97 0) (length 5.08)
+        (name "DIS" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 13.97 180) (length 5.08)
+        (name "SCLK" (effects (font (size 1.27 1.27))))
+        (number "30" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 16.51 180) (length 5.08)
+        (name "MOSI" (effects (font (size 1.27 1.27))))
+        (number "31" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 24.13 19.05 180) (length 5.08)
+        (name "DGND" (effects (font (size 1.27 1.27))))
+        (number "32" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 0 -30.48 90) (length 5.08)
+        (name "Exposed_PAD_GND" (effects (font (size 1.27 1.27))))
+        (number "33" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 11.43 0) (length 5.08)
+        (name "IN2" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 8.89 0) (length 5.08)
+        (name "IN1" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 6.35 0) (length 5.08)
+        (name "CFB" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 3.81 0) (length 5.08)
+        (name "FS_B" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 1.27 0) (length 5.08)
+        (name "VPWR" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -24.13 -1.27 0) (length 5.08)
+        (name "VPWR" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MCP1701A" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 5.08 -2.54 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MCP1701A" (id 1) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "/Users/antoine/Dropbox/Antoine/KicadLibs/Datasheets/MCP1701A.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "3V3 regulator 250mA" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOT_23 SOT_89 TO_92" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "MCP1701A_0_1"
+      (polyline
+        (pts
+          (xy -7.62 6.35)
+          (xy 7.62 6.35)
+          (xy 7.62 -3.81)
+          (xy -7.62 -3.81)
+          (xy -7.62 6.35)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "MCP1701A_1_1"
+      (pin bidirectional line (at 0 -11.43 90) (length 7.62)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -15.24 3.81 0) (length 7.62)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 15.24 3.81 180) (length 7.62)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MCP73831" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MCP73831" (id 1) (at 0 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at -3.81 12.7 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "Datasheets/MCP73831T.pdf" (id 3) (at -3.81 12.7 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "LIPO charge Manager" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOT-23-5 DFN" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "MCP73831_0_1"
+      (polyline
+        (pts
+          (xy -8.89 6.35)
+          (xy -8.89 -6.35)
+          (xy 8.89 -6.35)
+          (xy 8.89 6.35)
+          (xy -8.89 6.35)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "MCP73831_1_1"
+      (pin input line (at -13.97 -3.81 0) (length 5.08)
+        (name "STAT" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 13.97 -3.81 180) (length 5.08)
+        (name "VSS" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 13.97 3.81 180) (length 5.08)
+        (name "VBAT" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 3.81 0) (length 5.08)
+        (name "Vin" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 13.97 0 180) (length 5.08)
+        (name "PROG" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "MIC4421_22" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 5.08 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "MIC4421_22" (id 1) (at 10.16 -11.43 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "Datasheets/mic4421-22.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "MIC4421/22" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "DIP SOIC TO-220 TO220" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "MIC4421_22_0_1"
+      (rectangle (start -6.35 6.35) (end 6.35 -10.16)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start 6.35 -6.35) (end 6.35 -6.35)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "MIC4421_22_1_1"
+      (pin power_in line (at -2.54 11.43 270) (length 5.08)
+        (name "VS" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -11.43 1.27 0) (length 5.08)
+        (name "IN" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -11.43 -1.27 0) (length 5.08)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -2.54 -15.24 90) (length 5.08)
+        (name "GND_1" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 2.54 -15.24 90) (length 5.08)
+        (name "GND_2" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 11.43 -1.27 180) (length 5.08)
+        (name "OUT_2" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 11.43 1.27 180) (length 5.08)
+        (name "OUT_1" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at 1.27 11.43 270) (length 5.08)
+        (name "VS" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "NCP5051" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 6.35 -3.81 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "NCP5051" (id 1) (at 10.16 7.62 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "3V3 150mA Regulator" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "NCP5051_0_1"
+      (polyline
+        (pts
+          (xy 0 7.62)
+          (xy 0 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -3.81 5.08)
+          (xy -3.81 -5.08)
+          (xy 8.89 -5.08)
+          (xy 8.89 5.08)
+          (xy -3.81 5.08)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "NCP5051_1_1"
+      (pin power_in line (at -11.43 2.54 0) (length 7.62)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 2.54 -12.7 90) (length 7.62)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -7.62 7.62 0) (length 7.62)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_out line (at 16.51 2.54 180) (length 7.62)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "PTR" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "BOURNSPTR90" (id 0) (at 2.54 -8.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PTR" (id 1) (at 7.62 -6.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 13.97 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://datasheet.octopart.com/PTR901-2015K-B503-Bourns-datasheet-11550089.pdf" (id 3) (at 13.97 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Switched potentiometer" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "BOURNSPTR90" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "PTR_0_1"
+      (polyline
+        (pts
+          (xy 2.54 -3.81)
+          (xy 7.62 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.08 1.27)
+          (xy 4.445 2.413)
+          (xy 5.715 2.413)
+          (xy 5.08 1.397)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start 2.54 1.27) (end 7.62 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "PTR_1_1"
+      (pin bidirectional line (at 0 0 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 5.08 5.08 270) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 10.16 0 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 0 -3.81 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin bidirectional line (at 10.16 -3.81 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "PTR90" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "BOURNSPTR90" (id 0) (at 2.54 -8.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "PTR90" (id 1) (at 7.62 -6.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 13.97 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "https://datasheet.octopart.com/PTR901-2015K-B503-Bourns-datasheet-11550089.pdf" (id 3) (at 13.97 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Switched potentiometer" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "BOURNSPTR90" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "PTR90_0_1"
+      (polyline
+        (pts
+          (xy 2.54 -3.81)
+          (xy 7.62 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 5.08 1.27)
+          (xy 4.445 2.413)
+          (xy 5.715 2.413)
+          (xy 5.08 1.397)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (rectangle (start 2.54 1.27) (end 7.62 -1.27)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "PTR90_1_1"
+      (pin passive line (at 0 0 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 5.08 270) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 10.16 0 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 0 -3.81 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 10.16 -3.81 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "SPST" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "SW" (id 0) (at -2.54 -6.35 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SPST" (id 1) (at -2.54 -11.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at -2.54 -8.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "" (id 3) (at -2.54 -8.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "ki_keywords" "switch" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "Interrupteur simple" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "SPST_0_0"
+      (circle (center -7.112 -8.89) (radius 0.4572)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy -6.604 -8.89)
+          (xy 2.286 -6.096)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (arc (start 1.27 -6.477) (mid 1.9059 -6.6274) (end 2.286 -6.096)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.032 -8.89) (radius 0.4064)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "SPST_1_1"
+      (pin input line (at -15.24 -8.89 0) (length 7.62)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -15.24 -8.89 0) (length 7.62)
+        (name "1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -8.89 180) (length 7.62)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -8.89 180) (length 7.62)
+        (name "2" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "Si2307BDS" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 6.35 1.905 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Si2307BDS" (id 1) (at 6.35 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "SOT-23-3" (id 2) (at 6.35 -1.905 0)
+      (effects (font (size 1.27 1.27) italic) (justify left))
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "ki_fp_filters" "SOT-23*" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "Si2307BDS_0_1"
+      (polyline
+        (pts
+          (xy 0.635 -1.016)
+          (xy 0.635 -1.651)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 0.381)
+          (xy 0.635 -0.381)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 1.651)
+          (xy 0.635 1.016)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.048 -0.254)
+          (xy 2.921 -0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.556 -0.254)
+          (xy 3.048 -0.254)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.556 -0.254)
+          (xy 3.683 -0.127)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.524)
+          (xy 0 -1.524)
+          (xy 0 -1.524)
+        )
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.27)
+          (xy 2.54 -1.27)
+          (xy 2.54 -2.54)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 2.54 0)
+          (xy 2.54 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 1.27)
+          (xy 2.54 1.27)
+          (xy 2.54 2.54)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 1.397 0.381)
+          (xy 1.397 -0.381)
+          (xy 2.413 0)
+          (xy 1.397 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 2.54 1.27)
+          (xy 3.302 1.27)
+          (xy 3.302 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.302 -0.254)
+          (xy 3.556 0.381)
+          (xy 3.048 0.381)
+          (xy 3.302 -0.254)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center 1.27 0) (radius 3.175)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 -1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "Si2307BDS_1_1"
+      (pin input line (at -5.08 -1.27 0) (length 5.08)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -5.08 90) (length 2.54)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 5.08 270) (length 2.54)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "TLE5205" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 8.89 15.24 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Value" "TLE5205" (id 1) (at 5.08 12.7 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "Datasheets/TLE5205.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "ki_description" "TLE5205 MOTOR Driver" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "TO220" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "TLE5205_0_1"
+      (rectangle (start -8.89 11.43) (end 8.89 -8.89)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "TLE5205_1_1"
+      (pin input line (at 13.97 7.62 180) (length 5.08)
+        (name "OUT1" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 8.89 0) (length 5.08)
+        (name "EF" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 -3.81 0) (length 5.08)
+        (name "IN1" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 0 -13.97 90) (length 5.08)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -13.97 -6.35 0) (length 5.08)
+        (name "IN2" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 0 16.51 270) (length 5.08)
+        (name "VS" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 13.97 5.08 180) (length 5.08)
+        (name "OUT2" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "TMC_2208_SilentStepStick" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (id 0) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TMC_2208_SilentStepStick" (id 1) (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Datasheet" "https://wiki.fysetc.com/TMC2208/" (id 3) (at 0 12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "TMC_2208_SilentStepStick_0_1"
+      (rectangle (start -7.62 10.16) (end 7.62 -12.7)
+        (stroke (width 0.1524) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "TMC_2208_SilentStepStick_1_1"
+      (pin power_in line (at -10.16 7.62 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -7.62 180) (length 2.54)
+        (name "MS1" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -5.08 180) (length 2.54)
+        (name "MS2" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at 10.16 -2.54 180) (length 2.54)
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 0 180) (length 2.54)
+        (name "PDN" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 2.54 180) (length 2.54)
+        (name "CLK" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 5.08 180) (length 2.54)
+        (name "STEP" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 7.62 180) (length 2.54)
+        (name "DIR" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -10.16 5.08 0) (length 2.54)
+        (name "VIO" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -10.16 2.54 0) (length 2.54)
+        (name "M2B" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -10.16 0 0) (length 2.54)
+        (name "M2A" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -10.16 -2.54 0) (length 2.54)
+        (name "M1B" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin output line (at -10.16 -5.08 0) (length 2.54)
+        (name "M1A" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -10.16 -7.62 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -10.16 -10.16 0) (length 2.54)
+        (name "VM" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 10.16 -10.16 180) (length 2.54)
+        (name "EN" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "TPS92511DDA" (in_bom yes) (on_board yes)
+    (property "Reference" "U?" (id 0) (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "TPS92511DDA" (id 1) (at 0 -8.89 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "TPS92511DDA_0_1"
+      (rectangle (start -5.08 7.62) (end 5.08 -7.62)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type background))
+      )
+    )
+    (symbol "TPS92511DDA_1_1"
+      (pin input line (at -7.62 5.08 0) (length 2.54)
+        (name "VCC" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -7.62 2.54 0) (length 2.54)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -7.62 0 0) (length 2.54)
+        (name "IADJ" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at -7.62 -2.54 0) (length 2.54)
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 -2.54 180) (length 2.54)
+        (name "FS" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 0 180) (length 2.54)
+        (name "DIM" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 2.54 180) (length 2.54)
+        (name "LX" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin input line (at 7.62 5.08 180) (length 2.54)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "ZXM61N03F" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (property "Reference" "Q" (id 0) (at 6.35 1.905 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "ZXM61N03F" (id 1) (at 6.35 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "SOT-23" (id 2) (at 6.35 -1.905 0)
+      (effects (font (size 1.27 1.27) italic) (justify left))
+    )
+    (property "Datasheet" "http://datasheet.octopart.com/ZXM61N03FTA-Zetex-datasheet-8328987.pdf" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "ki_keywords" "MOSFET N-Channel" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "30V N-CHANNEL ENHANCEMENT MODE MOSFET SOT-23" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_fp_filters" "SOT-23" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "ZXM61N03F_0_1"
+      (polyline
+        (pts
+          (xy 0.635 -1.016)
+          (xy 0.635 -1.651)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 0.381)
+          (xy 0.635 -0.381)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.635 1.651)
+          (xy 0.635 1.016)
+        )
+        (stroke (width 0.508) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.048 0.381)
+          (xy 3.556 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0 1.524)
+          (xy 0 -1.524)
+          (xy 0 -1.524)
+        )
+        (stroke (width 0.254) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 -1.27)
+          (xy 2.54 -1.27)
+          (xy 2.54 -2.54)
+          (xy 2.54 -2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.762 1.27)
+          (xy 2.54 1.27)
+          (xy 2.54 2.54)
+          (xy 2.54 2.54)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 2.54 1.27)
+          (xy 3.302 1.27)
+          (xy 3.302 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 3.302 0.381)
+          (xy 3.048 -0.254)
+          (xy 3.556 -0.254)
+          (xy 3.302 0.381)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.762 0)
+          (xy 1.27 0)
+          (xy 2.54 0)
+          (xy 2.54 -1.27)
+          (xy 2.54 -1.27)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (polyline
+        (pts
+          (xy 0.889 0)
+          (xy 1.905 0.381)
+          (xy 1.905 -0.381)
+          (xy 0.889 0)
+          (xy 1.016 0)
+          (xy 1.016 0)
+        )
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type outline))
+      )
+      (circle (center 2.54 -1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (circle (center 2.54 1.27) (radius 0.127)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "ZXM61N03F_1_1"
+      (pin input line (at -5.08 -1.27 0) (length 5.08)
+        (name "G" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 5.08 270) (length 2.54)
+        (name "D" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 2.54 -5.08 90) (length 2.54)
+        (name "S" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+  (symbol "tatoo_Machine_Suspension" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "SUS" (id 0) (at 0 5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "tatoo_Machine_Suspension" (id 1) (at 0 -5.08 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "ameisso:tatoo_Machine_Suspension" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "ki_description" "tatoo machine copper rod suspension 5 pin 1mm" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (symbol "tatoo_Machine_Suspension_0_1"
+      (rectangle (start -2.54 3.81) (end 2.54 -3.81)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+    )
+    (symbol "tatoo_Machine_Suspension_1_1"
+      (pin passive line (at -5.08 2.54 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -5.08 0 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at -5.08 -2.54 0) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 -2.54 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 0 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin passive line (at 5.08 2.54 180) (length 2.54)
+        (name "~" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+    )
+  )
+)
