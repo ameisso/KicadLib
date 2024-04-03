@@ -1742,7 +1742,7 @@
     (property "Reference" "U" (at 0 3.81 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "URA_YMD-30WR3" (at 0 6.35 0)
+    (property "Value" "URA_YMD-20WR3" (at 0 6.35 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 0 0 0)
