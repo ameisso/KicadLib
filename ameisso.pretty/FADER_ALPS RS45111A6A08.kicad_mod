@@ -1,0 +1,143 @@
+(footprint "FADER_ALPS RS45111A6A08"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 2.3 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "04ff7f28-77a6-4c57-9839-72458c4e307f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "FADER_ALPS RS45111A6A08"
+		(at 0 -2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c61aa16-eab1-4c28-b5bd-9b32174eecaf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e5a9fbff-eb50-48a9-bd74-f5896d46cfb5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46ad7b4d-6459-4e25-be63-8f9c72aebce3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -30 -4.19)
+		(end 30 3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "9a2aea28-8c67-493b-9986-5cfdbffd54ea")
+	)
+	(fp_rect
+		(start -30 -4.2)
+		(end 30 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5742cb65-34bc-4341-ae5c-8bb7a8941a56")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b5676f6b-b1e6-4547-a645-81ab62f5ef74")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -17.5 0)
+		(size 2.1 2.1)
+		(drill 1.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "9bf239a0-51f0-4d79-a776-d6ddd70b420d")
+	)
+	(pad "" np_thru_hole circle
+		(at 15 0)
+		(size 2.1 2.1)
+		(drill 1.6)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "87773201-2ec5-43dd-9d1f-a52da27d81f3")
+	)
+	(pad "1" thru_hole circle
+		(at -25 1.875)
+		(size 3.2 3.2)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d5a91ae6-1964-4dde-b596-f239a7b16c02")
+	)
+	(pad "2" thru_hole circle
+		(at -25 -1.875)
+		(size 3.2 3.2)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "48b131d8-0537-4170-9542-d51e2a4b1008")
+	)
+	(pad "3" thru_hole circle
+		(at 25 1.875)
+		(size 3.2 3.2)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ec5566d7-d4ab-4dd7-8578-542de2b6f0b2")
+	)
+	(embedded_fonts no)
+	(model "/Users/antoine/projects/KicadLibs/ameisso/ameisso.pretty/Slider Alps v12.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,145 @@
+(footprint "KF301-3P screw terminal P5mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bc3a647b-aa78-421b-92b7-8a88f2de29d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "KF301-3P screw terminal P5mm"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f1693db9-d554-4328-85c4-7fa3dbdffe59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e71b54ca-bbd2-48f1-8005-10efb923b3b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0f331107-6838-4a4f-93ee-287dcfd18b0f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c611ba7b-0227-4f74-9d7a-e203fbd5d8b0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -7.5 -4.5)
+		(end 7.5 3.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "511391da-7307-4bee-9ea9-21772f4aaf03")
+	)
+	(fp_rect
+		(start -7.6 -4.55)
+		(end 7.6 3.15)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "684ae195-648a-4b8a-afe1-51f6662adc04")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a009a76-3796-4494-aa35-28bef320b25a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -5 0)
+		(size 1.8 4)
+		(drill 1.3
+			(offset 0 1)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "95f58cda-f107-4d17-99ea-288f7b7670c0")
+	)
+	(pad "2" thru_hole roundrect
+		(at 0 0)
+		(size 1.8 4)
+		(drill 1.3
+			(offset 0 1)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "d8e9b1cc-c0b3-447e-8c1e-b09710a4b598")
+	)
+	(pad "3" thru_hole roundrect
+		(at 5 0)
+		(size 1.8 4)
+		(drill 1.3
+			(offset 0 1)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "34a7877c-c4f4-4abc-b19a-756d08617dc0")
+	)
+	(model "/Users/antoine/projects/KicadLibs/ameisso/ameisso.pretty/screw terminal block 5 pin.step"
+		(offset
+			(xyz 10 0.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)
